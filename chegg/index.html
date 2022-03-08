@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="playSong()">Play</button>
+    <p><h1><span id="notes"></span></h1></p>
+<!--So Im running my code an so far its kinda how I want it... my issue is Im trying to display the letters in the note tag in succession...
+I can get this to happen but for some reason its doing duplicates.. like everything after the first C is DD EE FF GG and so on...how do I fix this?-->
+    <script>
+        function playSong() {
+
+            var scale =["C", "D", "E", "F", "G", "A5", "B5", "C5", "C5", "B5", "A5", "G", "F", "E", "D", "C"]
+
+            for (let i = 0; i <scale.length; i++){
+                if (scale[i] === "C"){
+
+                    //audios = document.getElementById("C").play();
+                    console.log(document.getElementById('notes').innerHTML);
+                    document.getElementById('notes').innerHTML +="C";
+                    break;
+                    
+
+                }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+                if (scale[i] === "D"){
+
+                    //audios = document.getElementById("D").play()
+                    console.log("Here " + document.getElementById('notes').innerHTML);
+                    document.getElementById('notes').innerHTML +="D";
+                    break;
+
+                }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+                if (scale[i] === "E"){
+
+                    //audios = document.getElementById("E").play()
+                    console.log(document.getElementById('notes').innerHTML);
+                    document.getElementById('notes').innerHTML +="E";
+                    break;
+                }
+            }
+/*
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "F"){
+
+            audios = document.getElementById("F").play()
+            document.getElementById('notes').innerHTML+="F";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "G"){
+
+            audios = document.getElementById("G").play()
+            document.getElementById('notes').innerHTML+="G";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "A5"){
+
+            audios = document.getElementById("A5").play()
+            document.getElementById('notes').innerHTML+="A5";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "B5"){
+
+            audios = document.getElementById("B5").play()
+            document.getElementById('notes').innerHTML+="B5";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "C5"){
+
+            audios = document.getElementById("C5").play()
+            document.getElementById('notes').innerHTML+="C5";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "C5"){
+
+            audios = document.getElementById("C5").play()
+            document.getElementById('notes').innerHTML+="C5";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "B5"){
+
+            audios = document.getElementById("B5").play()
+            document.getElementById('notes').innerHTML+="B5";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "A5"){
+
+            audios = document.getElementById("A5").play()
+            document.getElementById('notes').innerHTML+="A5";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "G"){
+
+            audios = document.getElementById("G").play()
+            document.getElementById('notes').innerHTML+="G";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "F"){
+
+            audios = document.getElementById("F").play()
+            document.getElementById('notes').innerHTML+="F";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "E"){
+
+            audios = document.getElementById("E").play()
+            document.getElementById('notes').innerHTML+="E";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "D"){
+
+            audios = document.getElementById("D").play()
+            document.getElementById('notes').innerHTML+="D";
+            }
+            }
+
+            for (let i = 0; i <scale.length; i++){
+            if (scale[i] === "C"){
+
+            audios = document.getElementById("C").play()
+            document.getElementById('notes').innerHTML+="C";
+            }
+            }*/
+        }
+    </script>
+</body>
+</html>
